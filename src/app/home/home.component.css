@@ -1,0 +1,24 @@
+p{
+  line-height: 2px;
+}
+.fa{
+  cursor: pointer;
+}
+.card{
+  position: relative;
+}
+.complete{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bg-undo{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.761);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}

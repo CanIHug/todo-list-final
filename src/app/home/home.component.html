@@ -1,0 +1,38 @@
+<main>
+  <div class="row">
+    <div class="col-lg-2 m-2 justify-content-center d-flex">
+      <button class="btn btn-danger w-100" routerLink="/addtodos">Add todos</button>
+    </div>
+    <div class="col-lg-10">
+    </div>
+  </div>
+
+  <div class="m-2">
+    <div class="row">
+      <div class="col-lg-3" *ngFor="let todo of todos$">
+        <div class="card mb-2">
+          <div class="card-body">
+            <h4 class="card-title text-capitalize">{{ todo.todo }} </h4>
+            <p>{{ todo.when }}</p>
+            <p>{{ todo.where }}</p>
+            <p>{{ todo.time }}</p>
+            <div class="d-flex">
+              <i (click)="edit(todo)" class="fa fa-edit text-dark mr-4" title="edit"></i>
+              <i (click)="del(todo.id)" class="fa fa-trash text-danger mr-4" title="delete"></i>
+              <div class="bg-undo" *ngIf="todo.status == 'done'">
+                <div class="complete text-center">
+                  <h1 class="text-white">Completed</h1>
+                  <i (click)="undo(todo.id)" class="fa fa-undo text-primary mr-4" title="undo"> Undo</i>
+                  <i (click)="del(todo.id)" class="fa fa-trash text-danger" title="delete"> Delete</i>
+                </div>
+              </div>
+
+              <i (click)="done(todo.id)" class="fa fa-check-circle text-success" title="done?"
+                *ngIf="todo.status == 'pending'"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

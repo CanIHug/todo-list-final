@@ -1,0 +1,36 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "todo": "Buy a drinks",
+      "when": "January 2, 2020",
+      "where": "Baguio",
+      "time": "1:30PM",
+      "status": "pending"
+    },
+    {
+      "todo": "Create a systems",
+      "when": "2020-09-30",
+      "where": "Friend house",
+      "time": "16:11",
+      "status": "done",
+      "id": 2
+    },
+    {
+      "todo": "Go to market",
+      "when": "2020-09-30",
+      "where": "Tarlac",
+      "time": "16:13",
+      "status": "done",
+      "id": 3
+    },
+    {
+      "todo": "Buy a Clothes",
+      "when": "2020-09-30",
+      "where": "SM Baguio",
+      "time": "16:14",
+      "status": "pending",
+      "id": 4
+    }
+  ]
+}

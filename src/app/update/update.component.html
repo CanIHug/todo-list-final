@@ -1,0 +1,56 @@
+<div class="contaner">
+  <div class="col-lg-8 col-md-8 col-8 my-4">
+    <div class="form offset-6">
+      <div class="text-center">
+        <h1>Update Todos</h1>
+      </div>
+      <form (ngSubmit)="update(service.todoData)" #form="ngForm">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label>Todo</label>
+              <input type="text" [(ngModel)]="service.todoData.todo" #todo="ngModel" name="todo" class="form-control" required>
+              <!-- error message dito -->
+              <small class="text-danger" *ngIf="todo.invalid && (todo.dirty || todo.touched)">
+                This field is required!
+              </small>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label>When</label>
+              <input type="date" [(ngModel)]="service.todoData.when" #when="ngModel" name="when" class="form-control" required>
+              <!-- error message dito -->
+              <small class="text-danger" *ngIf="when.invalid && (when.dirty || when.touched)">
+                This field is required!
+              </small>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label>Where</label>
+              <input type="text" [(ngModel)]="service.todoData.where" #where="ngModel" name="where" class="form-control" required>
+              <!-- error message dito -->
+              <small class="text-danger" *ngIf="where.invalid && (where.dirty || where.touched)">
+                This field is required!
+              </small>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label>Time</label>
+              <input type="time" [(ngModel)]="service.todoData.time" #time="ngModel" name="time" class="form-control" required>
+              <!-- error message dito -->
+              <small class="text-danger" *ngIf="time.invalid && (time.dirty || time.touched)">
+                This field is required!
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-warning" [disabled]="form.invalid">Update</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
