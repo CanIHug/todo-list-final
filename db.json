@@ -1,14 +1,6 @@
 {
   "todos": [
     {
-      "id": 1,
-      "todo": "Buy a drinks",
-      "when": "January 2, 2020",
-      "where": "Baguio",
-      "time": "1:30PM",
-      "status": "pending"
-    },
-    {
       "todo": "Create a systems",
       "when": "2020-09-30",
       "where": "Friend house",
@@ -17,7 +9,7 @@
       "id": 2
     },
     {
-      "todo": "Go to market",
+      "todo": "Go to marketsssss",
       "when": "2020-09-30",
       "where": "Tarlac",
       "time": "16:13",
